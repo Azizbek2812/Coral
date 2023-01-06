@@ -1,0 +1,385 @@
+* {
+  font-family: "Open Sans", sans-serif;
+  text-decoration: none;
+  list-style: none;
+  margin: 0%;
+  padding: 0%;
+  scroll-behavior: smooth;
+}
+
+@media (max-width: 1280px) {
+  header .container {
+    width: 700px;
+  }
+  header .container .navbar {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 70px;
+    border-bottom: 0.5px solid rgb(206, 204, 204);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  header .container .navbar .navlinks ul {
+    display: flex;
+    gap: 5px;
+    color: black;
+    font-weight: 200;
+  }
+  header .container .navbar .navlinks ul li a {
+    font-weight: 400;
+    border: 1px solid whitesmoke;
+    border-radius: 9px;
+    padding: 5px;
+    font-size: 10px;
+  }
+  header .container .navbar .navlinks ul a:active {
+    border: 1px solid black;
+    padding: 5px;
+    transition: all 0.1s ease-out;
+    border-radius: 9px;
+  }
+  #collections .container {
+    width: 700px;
+  }
+  #collections .container .showcase {
+    margin-top: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 50px;
+  }
+  #collections .container .showcase .left {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  #collections .container .showcase .left h1 {
+    font-weight: 300;
+    font-size: 5rem;
+  }
+  #collections .container .showcase .left p {
+    font-weight: 400;
+  }
+  #collections .container .showcase .left button {
+    background-color: black;
+    color: white;
+    border-radius: 8px;
+    padding: 10px;
+    width: 100px;
+  }
+  #collections .container .showcase .left button:hover {
+    opacity: 0.8;
+  }
+  #collections .container .showcase .left button:active {
+    opacity: 0.6;
+  }
+  #collections .container .showcase .right {
+    width: 100%;
+  }
+  #collections .container .showcase .right img {
+    width: 100%;
+  }
+  #brands .container {
+    width: 700px;
+  }
+  #brands .container .brands {
+    margin-top: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+.container {
+  margin: 0 auto;
+  width: 1300px;
+}
+
+body {
+  background-color: whitesmoke;
+}
+
+a {
+  color: inherit;
+}
+
+li {
+  list-style: none;
+  text-decoration: none;
+}
+
+header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: whitesmoke;
+  z-index: 999;
+}
+header .container .navbar {
+  width: 100%;
+  height: 70px;
+  border-bottom: 0.5px solid rgb(206, 204, 204);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .container .navbar .navlinks ul {
+  display: flex;
+  gap: 15px;
+  color: black;
+  font-weight: 200;
+}
+header .container .navbar .navlinks ul li a {
+  font-weight: 400;
+  border: 1px solid whitesmoke;
+  border-radius: 9px;
+  padding: 8px;
+}
+header .container .navbar .navlinks ul a:active {
+  border: 1px solid black;
+  padding: 8px;
+  transition: all 0.1s ease-out;
+  border-radius: 9px;
+}
+
+#collections .container .showcase {
+  margin-top: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#collections .container .showcase .left {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+#collections .container .showcase .left h1 {
+  font-weight: 300;
+  font-size: 5rem;
+}
+#collections .container .showcase .left p {
+  font-weight: 400;
+}
+#collections .container .showcase .left button {
+  background-color: black;
+  color: white;
+  border-radius: 8px;
+  padding: 10px;
+  width: 100px;
+}
+#collections .container .showcase .left button:hover {
+  opacity: 0.8;
+}
+#collections .container .showcase .left button:active {
+  opacity: 0.6;
+}
+#collections .container .showcase .right {
+  width: 50%;
+}
+#collections .container .showcase .right img {
+  width: 100%;
+}
+
+#brands .container .brands {
+  margin-top: 150px;
+  margin-bottom: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#premium .container .premium {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#premium .container .premium h2 {
+  font-size: 3rem;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 50px;
+}
+#premium .container .premium .premium-products {
+  color: white;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 300px);
+  gap: 20px;
+}
+#premium .container .premium .premium-products i {
+  color: gold;
+}
+
+#new .container .new {
+  margin-top: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#new .container .new h2 {
+  font-size: 3rem;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 50px;
+}
+#new .container .new .new-products {
+  color: white;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 300px);
+  gap: 30px;
+}
+#new .container .new .new-products i {
+  color: gold;
+}
+
+#best .container .best {
+  margin-top: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#best .container .best h2 {
+  font-size: 3rem;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 50px;
+}
+#best .container .best .best-products {
+  color: white;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+#best .container .best .best-products i {
+  color: gold;
+}
+
+.card {
+  background-color: white;
+  border-radius: 10px;
+}
+.card img {
+  width: 100%;
+  height: 100%;
+}
+
+.card:hover .cardBottom {
+  transition: all 0.5s ease-in;
+  transform: translateY(-100%);
+  opacity: 1;
+}
+
+.cardBottom {
+  background-color: rgb(0, 0, 3);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 50px;
+  opacity: 0;
+  transform: translateY(0%);
+}
+.cardBottom .partleft {
+  display: flex;
+  gap: 3px;
+  width: 40px;
+}
+.cardBottom .partleft .star {
+  color: gold;
+}
+.cardBottom .partleft p {
+  color: white;
+}
+.cardBottom .partright {
+  display: flex;
+  width: 30px;
+}
+.cardBottom .partright p {
+  color: white;
+}
+
+#footer .container .content {
+  margin-top: 100px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#footer .container .content .coral {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  gap: 20px;
+  justify-content: center;
+  align-items: flex-start;
+}
+#footer .container .content .coral .icons {
+  display: flex;
+  gap: 20px;
+  color: black;
+  align-items: center;
+}
+#footer .container .content .catalog {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+}
+#footer .container .content .catalog h2 {
+  font-weight: 300;
+  font-size: 1rem;
+}
+#footer .container .content .catalog ul {
+  display: flex;
+  flex-direction: column;
+}
+#footer .container .content .about {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+}
+#footer .container .content .about h2 {
+  font-weight: 300;
+  font-size: 1rem;
+}
+#footer .container .content .about ul {
+  display: flex;
+  flex-direction: column;
+}
+#footer .container .content .customer {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+}
+#footer .container .content .customer h2 {
+  font-weight: 300;
+  font-size: 1rem;
+}
+#footer .container .content .customer ul {
+  display: flex;
+  flex-direction: column;
+}
+
+#stick {
+  width: 100%;
+  height: 50px;
+  background-color: rgb(12, 12, 19);
+}
+#stick .container .last {
+  padding-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+}
+#stick .container .last i {
+  color: blue;
+}/*# sourceMappingURL=main.css.map */
